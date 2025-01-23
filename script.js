@@ -43,7 +43,7 @@ function aplicarDescuento() {
             const codigo = codigoDescuentoInput.value.trim();
             if (codigo === "DIAZ") {
                 const total = parseFloat(resultadoElement.textContent.split(': ')[1]);
-                const descuento = total * 0.10; // 10% de descuento
+                const descuento = total * 0.20; // 20% de descuento
                 const nuevoTotal = total - descuento;
                 resolve(nuevoTotal);
             } else {
